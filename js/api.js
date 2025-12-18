@@ -1,4 +1,4 @@
-const API_KEY = "fd7bd79936cc0e2b1b3bdc271df2d729";
+const API_KEY = "1d510ffb171879c8be6f38649fd1b2e7";
 
 async function fetchCurrentWeather(city) {
   const response = await fetch(
