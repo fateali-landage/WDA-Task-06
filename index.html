@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__title">Weather Dashboard</h1>
+    <p class="header__subtitle">Current Weather & 5-Day Forecast</p>
+  </header>
+
+  <main class="container">
+
+    <!-- SEARCH -->
+    <section class="search">
+      <input 
+        type="text" 
+        id="cityInput" 
+        class="search__input"
+        placeholder="Enter city name"
+        aria-label="City name"
+      />
+      <button id="searchBtn" class="search__btn">Search</button>
+    </section>
+
+    <!-- LOADING -->
+    <p id="loading" class="status status--loading hidden">Loading...</p>
+    <p id="error" class="status status--error hidden"></p>
+
+    <!-- CURRENT WEATHER -->
+    <section id="currentWeather" class="weather-card hidden"></section>
+
+    <!-- FORECAST -->
+    <section id="forecast" class="forecast-grid"></section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Fatheali Landage</p>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
